@@ -1,0 +1,167 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      5292,        158]
+NotebookOptionsPosition[      4585,        129]
+NotebookOutlinePosition[      5021,        146]
+CellTagsIndexPosition[      4978,        143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["p-Distance", "Title",
+ CellChangeTimes->{{3.4776822538051033`*^9, 3.477682257730884*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"S", " ", "x", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"S", " ", "x"}]}], ")"}]}], 
+      RowBox[{"N", " ", "1"}]], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "10"}], "}"}], ",", " ", 
+     RowBox[{"PlotRange", " ", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "6"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"MaxRecursion", "\[Rule]", "10"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"S", ",", "2"}], "}"}], ",", "0", ",", "100"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"N", ",", "2"}], "}"}], ",", "0.1", ",", "10"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.477681907787815*^9, 3.4776820121427917`*^9}, {
+  3.477682052086955*^9, 3.4776821518418417`*^9}, {3.477682207025858*^9, 
+  3.4776822248952913`*^9}, {3.4776823264317017`*^9, 3.477682351939303*^9}, {
+  3.4776837398046637`*^9, 3.477683794145775*^9}, {3.477683850032382*^9, 
+  3.477683885013648*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{N$$ = 2, $CellContext`S$$ = 4.800000000000001, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`S$$], 2}, 0, 100}, {{
+       Hold[N$$], 2}, 0.1, 10}}, Typeset`size$$ = {360., {113., 118.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`S$20077$$ = 0, N$20078$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {N$$ = 2, $CellContext`S$$ = 2}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`S$$, $CellContext`S$20077$$, 0], 
+        Hold[N$$, N$20078$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[$CellContext`S$$ $CellContext`x (
+         1 - $CellContext`S$$ $CellContext`x)/(N$$ 
+        1), {$CellContext`x, 0, 10}, PlotRange -> {{0, 6}, {0, 1}}, 
+        MaxRecursion -> 10], 
+      "Specifications" :> {{{$CellContext`S$$, 2}, 0, 100}, {{N$$, 2}, 0.1, 
+         10}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {172.34375, 177.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.4776820191557713`*^9, {3.4776820534513617`*^9, 3.477682115432513*^9}, 
+   3.477682160152441*^9, {3.477682210226142*^9, 3.47768222562218*^9}, {
+   3.477682327104591*^9, 3.477682353308157*^9}, {3.477683741410109*^9, 
+   3.477683794786559*^9}, {3.477683856306831*^9, 3.4776838855638323`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"1", "/", "11"}], "]"}]], "Input",
+ CellChangeTimes->{{3.477683144568985*^9, 3.4776831542203817`*^9}}],
+
+Cell[BoxData["0.09090909090909091`"], "Output",
+ CellChangeTimes->{{3.477683147937469*^9, 3.477683155315393*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"3", "*", "%"}]], "Input",
+ CellChangeTimes->{{3.4776831678530912`*^9, 3.4776831698274508`*^9}}],
+
+Cell[BoxData["0.2727272727272727`"], "Output",
+ CellChangeTimes->{3.477683170639224*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{640, 750},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->FrontEnd`FileName[{"Creative"}, "NaturalColor.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 95, 1, 66, "Title"],
+Cell[CellGroupData[{
+Cell[687, 27, 1229, 34, 84, "Input"],
+Cell[1919, 63, 2092, 41, 377, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4048, 109, 146, 3, 37, "Input"],
+Cell[4197, 114, 113, 1, 37, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4347, 120, 119, 2, 37, "Input"],
+Cell[4469, 124, 88, 1, 37, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

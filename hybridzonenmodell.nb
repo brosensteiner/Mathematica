@@ -1,0 +1,167 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      5972,        158]
+NotebookOptionsPosition[      5482,        137]
+NotebookOutlinePosition[      5919,        154]
+CellTagsIndexPosition[      5876,        151]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Hybridzonemodell",
+ FontFamily->"Minion Pro Subh",
+ FontWeight->"Plain"]], "Title",
+ CellChangeTimes->{{3.477585918363125*^9, 3.477585923803644*^9}},
+ TextAlignment->Center,
+ TextJustification->0.],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"Tanh", "[", 
+         FractionBox[
+          RowBox[{"2", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"pop", " ", "x"}], "-", 
+             RowBox[{"center", " ", "1"}]}], ")"}]}], 
+          RowBox[{"breite", " ", "1.1"}]], "]"}]}], ")"}], "2"], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+     RowBox[{"PlotRange", " ", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"MaxRecursion", "\[Rule]", "10"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"pop", ",", "2"}], "}"}], ",", "0", ",", "100"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"breite", ",", "2"}], "}"}], ",", "0.1", ",", "6"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"center", ",", "0"}], "}"}], ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.477584511856793*^9, 3.477584617754994*^9}, {
+  3.477584650423765*^9, 3.477584725383539*^9}, {3.477584775359914*^9, 
+  3.477584776397929*^9}, {3.4775848392937603`*^9, 3.477585089877789*^9}, {
+  3.477585388402927*^9, 3.477585476936598*^9}, {3.4775856136651917`*^9, 
+  3.4775856264252987`*^9}, {3.477585720783725*^9, 3.477585762812578*^9}, {
+  3.477585829156753*^9, 3.477585885200863*^9}, {3.4776417174193783`*^9, 
+  3.4776417389702377`*^9}, {3.477641790793685*^9, 3.477641839639233*^9}, {
+  3.47764191751199*^9, 3.477641929545456*^9}, {3.477642000062064*^9, 
+  3.4776420076821337`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`breite$$ = 2, $CellContext`center$$ = 
+    0, $CellContext`pop$$ = 5.800000000000001, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`pop$$], 2}, 0, 100}, {{
+       Hold[$CellContext`breite$$], 2}, 0.1, 6}, {{
+       Hold[$CellContext`center$$], 0}, -5, 5}}, Typeset`size$$ = {
+    360., {116., 121.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`pop$27325$$ = 
+    0, $CellContext`breite$27326$$ = 0, $CellContext`center$27327$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`breite$$ = 2, $CellContext`center$$ = 
+        0, $CellContext`pop$$ = 2}, "ControllerVariables" :> {
+        Hold[$CellContext`pop$$, $CellContext`pop$27325$$, 0], 
+        Hold[$CellContext`breite$$, $CellContext`breite$27326$$, 0], 
+        Hold[$CellContext`center$$, $CellContext`center$27327$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[(1 + Tanh[
+          2 ($CellContext`pop$$ $CellContext`x - $CellContext`center$$ 
+            1)/($CellContext`breite$$ 1.1)])/2, {$CellContext`x, -10, 10}, 
+        PlotRange -> {{-2, 2}, {0, 1}}, MaxRecursion -> 10], 
+      "Specifications" :> {{{$CellContext`pop$$, 2}, 0, 
+         100}, {{$CellContext`breite$$, 2}, 0.1, 
+         6}, {{$CellContext`center$$, 0}, -5, 5}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {189.34375, 194.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.477584625288775*^9, {3.477584662494471*^9, 3.4775847266410418`*^9}, {
+   3.477584867537279*^9, 3.477584922747045*^9}, {3.477584959694704*^9, 
+   3.477585090381537*^9}, {3.477585391663198*^9, 3.4775854539435997`*^9}, 
+   3.477585627570876*^9, {3.477585721689143*^9, 3.4775857635076*^9}, {
+   3.4775858489927177`*^9, 3.477585885706296*^9}, {3.47764172228074*^9, 
+   3.477641740068181*^9}, 3.477641840597389*^9, {3.477641918629328*^9, 
+   3.477641930219784*^9}, 3.4776420084530907`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{857, 1152},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->FrontEnd`FileName[{"Creative"}, "NaturalColor.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 221, 5, 66, "Title"],
+Cell[CellGroupData[{
+Cell[813, 31, 1897, 49, 94, "Input"],
+Cell[2713, 82, 2741, 51, 411, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

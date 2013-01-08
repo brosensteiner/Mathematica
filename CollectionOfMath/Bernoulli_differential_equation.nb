@@ -1,0 +1,312 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8298,        303]
+NotebookOptionsPosition[      7216,        265]
+NotebookOutlinePosition[      7572,        281]
+CellTagsIndexPosition[      7529,        278]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Bernoulli differential equation\
+\>", "Title",
+ CellChangeTimes->{{3.56577937331*^9, 3.56577941180791*^9}}],
+
+Cell["Definition", "Subtitle",
+ CellChangeTimes->{{3.5657794790277147`*^9, 3.565779480377863*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"y", "\[CloseCurlyQuote]"}], 
+    RowBox[{"(", "x", ")"}]}], " ", "=", " ", 
+   RowBox[{
+    RowBox[{"f", 
+     RowBox[{"(", "x", ")"}], "y", 
+     RowBox[{"(", "x", ")"}]}], " ", "+", " ", 
+    RowBox[{
+     FormBox[
+      RowBox[{
+       RowBox[{"g", "(", "x", ")"}], 
+       SuperscriptBox["y", "\[Alpha]"]}],
+      TraditionalForm], 
+     RowBox[{"(", "x", ")"}]}]}]}], ",", " ", 
+  RowBox[{"\[Alpha]", " ", "\[NotElement]", " ", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1"}], "}"}]}]}]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.565779510090617*^9, 3.5657808512129107`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Solution (by hand :))", "Subtitle",
+ CellChangeTimes->{{3.565780804084405*^9, 3.565788398280238*^9}}],
+
+Cell[TextData[{
+ "divide (1) through ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["y", "\[Alpha]"], " ", 
+    RowBox[{"(", 
+     RowBox[{"multiplying", " ", "by", " ", 
+      SuperscriptBox["y", 
+       RowBox[{"-", "\[Alpha]"}]]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.565780819763979*^9, 3.5657809384006567`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    SuperscriptBox["y", 
+     RowBox[{"-", "\[Alpha]"}]], 
+    RowBox[{"y", "'"}]}],
+   FontColor->RGBColor[1, 0, 0]], "=", 
+  RowBox[{
+   RowBox[{"f", 
+    RowBox[{"(", "x", ")"}], 
+    SuperscriptBox["y", 
+     RowBox[{"1", "-", "\[Alpha]"}]]}], " ", "+", "  ", 
+   RowBox[{"g", 
+    RowBox[{"(", "x", ")"}]}]}]}]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.565780968150375*^9, 3.565781064507229*^9}}],
+
+Cell["substitute:", "Text",
+ CellChangeTimes->{{3.565781182306959*^9, 3.5657811869697523`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["z",
+   FontColor->RGBColor[0, 1, 0]], " ", "=", " ", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["y", 
+     RowBox[{"1", "-", "\[Alpha]"}]], " ", "\[Rule]", " ", 
+    RowBox[{"z", "'"}]}], " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "-", "\[Alpha]"}], ")"}], 
+      SuperscriptBox["y", "\[Alpha]"], 
+      RowBox[{"y", "'"}]}], " ", "\[Rule]", " ", 
+     StyleBox[
+      RowBox[{
+       SuperscriptBox["y", "\[Alpha]"], 
+       RowBox[{"y", "'"}]}],
+      FontColor->RGBColor[1, 0, 0]]}], " ", "=", " ", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"1", "-", "\[Alpha]"}]], 
+     RowBox[{"z", "'"}]}]}]}]}]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.565781196707996*^9, 3.565781513731593*^9}}],
+
+Cell["\<\
+so (2) is now a linear differential equation (substituting y and multiplying \
+with 1-\[Alpha]):\
+\>", "Text",
+ CellChangeTimes->{{3.5657815492100077`*^9, 3.565784487858881*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"1", "-", "\[Alpha]"}]], 
+    RowBox[{"z", "'"}]}],
+   FontColor->RGBColor[1, 0, 0]], "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", 
+      RowBox[{"(", "x", ")"}], 
+      StyleBox["z",
+       FontColor->RGBColor[0, 1, 0]]}], " ", "+", "  ", 
+     RowBox[{"g", 
+      RowBox[{"(", "x", ")"}]}]}], " ", "\[Rule]", " ", 
+    RowBox[{"z", "'"}]}], " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", "\[Alpha]"}], ")"}], "f", 
+     RowBox[{"(", "x", ")"}], "z"}], " ", "+", " ", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", "\[Alpha]"}], ")"}], "g", 
+     RowBox[{"(", "x", ")"}]}]}]}]}]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.5657815739719687`*^9, 3.565781975939736*^9}}],
+
+Cell["\<\
+substituting P = (1\[Minus]\[Alpha]) f(x) and Q = (1\[Minus]\[Alpha]) g(x):\
+\>", "Text",
+ CellChangeTimes->{{3.5657881591988897`*^9, 3.56578823470313*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"z", "'"}], " ", "=", " ", 
+  RowBox[{
+   RowBox[{"P", " ", "z"}], " ", "+", " ", "Q"}]}]], "DisplayFormulaNumbered",\
+
+ CellChangeTimes->{{3.565788270390033*^9, 3.565788302788314*^9}}],
+
+Cell["\<\
+This can be solved with for example with the method of integration factor\
+\>", "Text",
+ CellChangeTimes->{{3.565790596270392*^9, 3.565790620932104*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Example: logistic differential equation\
+\>", "Subtitle",
+ CellChangeTimes->{{3.565790877183647*^9, 3.5657908988295393`*^9}}],
+
+Cell[TextData[{
+ "y\[CloseCurlyQuote] = a y(x) (1 - ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"y", "(", "x", ")"}], "M"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "), M=const., b = ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["a", "M"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[Rule]\ny\[CloseCurlyQuote] = a y(x) + b ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["y", "2"], "(", "x", ")"}], TraditionalForm]]],
+ ",  y(0) = ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["y", "0"], TraditionalForm]]],
+ " >  0; a, b > 0; (\[Alpha] = 2)"
+}], "Text",
+ CellChangeTimes->{{3.56579105676336*^9, 3.565798742895397*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Solution of logistic differential equation\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.5657915286327353`*^9, 3.565791537694626*^9}}],
+
+Cell[TextData[{
+ "divide by ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    RowBox[{"y", "(", "x", ")"}], "2"], TraditionalForm]]],
+ ":\ny\[CloseCurlyQuote]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", "x", ")"}], 
+    SuperscriptBox[
+     RowBox[{"y", "(", "x", ")"}], 
+     RowBox[{"-", "2"}]]}], TraditionalForm]]],
+ " = a ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    RowBox[{"y", "(", "x", ")"}], 
+    RowBox[{"-", "1"}]], TraditionalForm]]],
+ " + b\nsubstitute z(x) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"y", "(", "x", ")"}], 
+     RowBox[{"-", "1"}]], " ", "\[Rule]", " "}], TraditionalForm]]],
+ "z\[CloseCurlyQuote](x) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    RowBox[{
+     SuperscriptBox["y", 
+      RowBox[{"-", "2"}]], "(", "x", ")"}], " "}], TraditionalForm]]],
+ "y(x)\[CloseCurlyQuote] \[Rule] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["y", 
+      RowBox[{"-", "2"}]], "(", "x", ")"}], " "}], TraditionalForm]]],
+ "y(x) = -z\[CloseCurlyQuote](x)\nz\[CloseCurlyQuote](x) = -",
+ "a ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "(", "x", ")"}], TraditionalForm]]],
+ " + b"
+}], "Text",
+ CellChangeTimes->{{3.565791547471841*^9, 3.5657981258985643`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{835, 1002},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 117, 3, 92, "Title"],
+Cell[699, 27, 98, 1, 51, "Subtitle"],
+Cell[800, 30, 645, 20, 24, "DisplayFormulaNumbered"],
+Cell[CellGroupData[{
+Cell[1470, 54, 107, 1, 51, "Subtitle"],
+Cell[1580, 57, 394, 13, 32, "Text"],
+Cell[1977, 72, 457, 15, 26, "DisplayFormulaNumbered"],
+Cell[2437, 89, 95, 1, 30, "Text"],
+Cell[2535, 92, 792, 25, 43, "DisplayFormulaNumbered"],
+Cell[3330, 119, 188, 4, 30, "Text"],
+Cell[3521, 125, 820, 27, 43, "DisplayFormulaNumbered"],
+Cell[4344, 154, 166, 3, 30, "Text"],
+Cell[4513, 159, 219, 6, 22, "DisplayFormulaNumbered"],
+Cell[4735, 167, 163, 3, 30, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4935, 175, 135, 3, 51, "Subtitle"],
+Cell[5073, 180, 669, 23, 61, "Text"],
+Cell[CellGroupData[{
+Cell[5767, 207, 141, 3, 29, "Subsubtitle"],
+Cell[5911, 212, 1265, 48, 97, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
