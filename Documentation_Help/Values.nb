@@ -1,0 +1,102 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2376,         93]
+NotebookOptionsPosition[      1672,         66]
+NotebookOutlinePosition[      2029,         82]
+CellTagsIndexPosition[      1986,         79]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Values in Mathematica", "Title",
+ CellChangeTimes->{{3.5668471038854*^9, 3.566847112535324*^9}}],
+
+Cell["the List", "Subtitle",
+ CellChangeTimes->{{3.566847123534275*^9, 3.566847130637825*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Upvalue", "ItemNumbered",
+ CellChangeTimes->{{3.566847160454257*^9, 3.566847221108173*^9}}],
+
+Cell["Downvalue", "ItemNumbered",
+ CellChangeTimes->{{3.566847160454257*^9, 3.566847226338668*^9}}],
+
+Cell["SubValues", "ItemNumbered",
+ CellChangeTimes->{{3.566847160454257*^9, 3.566847230754136*^9}}],
+
+Cell["OwnValues", "ItemNumbered",
+ CellChangeTimes->{{3.566847160454257*^9, 3.566847238945496*^9}}],
+
+Cell["FormatValues", "ItemNumbered",
+ CellChangeTimes->{{3.566847160454257*^9, 3.5668472434426413`*^9}}],
+
+Cell["NValues", "ItemNumbered",
+ CellChangeTimes->{{3.566847160454257*^9, 3.566847247451429*^9}}],
+
+Cell["DefaultValues", "ItemNumbered",
+ CellChangeTimes->{{3.566847160454257*^9, 3.5668473314064207`*^9}}],
+
+Cell["\<\
+SingularValues
+
+
+
+
+
+
+
+\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.566847160454257*^9, 3.566847258928884*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{740, 867},
+WindowMargins->{{20, Automatic}, {Automatic, 44}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 102, 1, 92, "Title"],
+Cell[684, 25, 94, 1, 51, "Subtitle"],
+Cell[CellGroupData[{
+Cell[803, 30, 97, 1, 30, "ItemNumbered"],
+Cell[903, 33, 99, 1, 30, "ItemNumbered"],
+Cell[1005, 36, 99, 1, 30, "ItemNumbered"],
+Cell[1107, 39, 99, 1, 30, "ItemNumbered"],
+Cell[1209, 42, 104, 1, 30, "ItemNumbered"],
+Cell[1316, 45, 97, 1, 30, "ItemNumbered"],
+Cell[1416, 48, 105, 1, 30, "ItemNumbered"],
+Cell[1524, 51, 120, 11, 182, "ItemNumbered"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
